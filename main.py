@@ -1,9 +1,6 @@
-red = '\033[91m'
-gray = '\033[90m'
-reset = '\033[0m'
+def all_even_numbers_between_them (num_1, num_2):
+    for i in range(num_1, num_2):
+        if i % 2 == 0:
+            print(i, end = " | ")
 
-def print_quotation():
-    print(f"\n{gray}\"Don't compare yourself with anyone in this world…{reset}")
-    print(f"{red}if{reset} you {red}do so{reset}, you are insulting yourself.{gray}\"{reset}\nBill Gates")
-
-print_quotation()
+all_even_numbers_between_them(2,50)

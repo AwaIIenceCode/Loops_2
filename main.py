@@ -1,12 +1,21 @@
-def digit_count(number = 3456):
-    count_numbers = 0
+#var 1
+def polindrom (number = 123321):
+    number = str(number)
 
-    while number != 0:
-        number //= 10
-        count_numbers += 1
+    mas_reverse = []
+    mas = []
 
-    return count_numbers
+    for letter in number:
+        mas.append(letter)
+        mas_reverse.append(letter)
 
-result = digit_count()
+    mas_reverse.reverse()
+
+    if mas == mas_reverse:
+        return True
+    else:
+        return False
+
+result = polindrom()
 
 print(result)
